@@ -1,0 +1,11 @@
+<h1>A Whole New Word!</h1>
+
+<%= simple_form_for @word do |f| %>
+  <%= f.input :word %><br>
+  <%= f.input :translation %><br>
+  <%= f.submit 'Create' %>
+<% end %>
+
+<br>
+
+<%= link_to 'Back', root_path %>

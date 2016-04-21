@@ -1,0 +1,11 @@
+<h1>Word Index</h1>
+
+<h2>A few words and their meanings...</h2>
+
+<% @words.each do |word| %>
+  <div>
+    <p><strong><%= word.word %></strong> means <i><%= word.translation %></i></p><br>
+  </div>
+<% end %>
+
+<%= link_to 'Contribute a word', new_word_path %>
